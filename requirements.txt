@@ -1,0 +1,4 @@
+torchattacks==3.2.6
+tqdm==4.59.0
+gdown==4.4.0
+adversarial-robustness-toolbox==1.10.1

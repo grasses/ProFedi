@@ -1,0 +1,21 @@
+vic_model: ResNet34
+vic_data: MNIST
+sub_data: FashionMNIST
+
+atk_method: JBDA-PGD
+atk_model: CNN
+atk_data: SVHN
+atk_methods:
+  - JBDA-FGSM
+  - JBDA-PGD
+  - Knockoff
+  - DFME
+  - DaST
+
+tau1: 0.4
+tau2: 0.05
+query_size: 1000
+query_budget: 500000
+query_range:
+  - 1
+  - 11

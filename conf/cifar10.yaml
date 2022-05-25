@@ -1,0 +1,21 @@
+vic_model: ResNet34
+vic_data: CIFAR10
+sub_data: CIFAR100
+
+atk_method: JBDA-PGD
+atk_model: ResNet18
+atk_data: CIFAR10
+atk_methods:
+  - JBDA-FGSM
+  - JBDA-PGD
+  - Knockoff
+  - DFME
+  - DaST
+
+tau1: 0.75
+tau2: 0.05
+query_size: 1000
+query_budget: 500000
+query_range:
+  - 1
+  - 11

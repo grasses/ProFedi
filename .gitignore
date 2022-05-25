@@ -1,0 +1,8 @@
+.idea/
+output/
+.DS_Store
+data/
+deploy
+.pyc
+.swp
+.pt
